@@ -21,6 +21,9 @@ Automatic Weather Station (AWS) networks across India frequently suffer from sen
 * **Self-Healing Telemetry:** Automatically gap-fills corrupted or missing sensor streams using statistical and historical interpolation.
 
 ---
+## ⚙️ System Architecture
+
+The pipeline processes AWS telemetry through four sequential layers:
 ┌─────────────────────────┐
 │  1. Data Ingestion      │ ──► CSV Replay / Live Telemetry Ingest & Schema Check
 └────────────┬────────────┘
@@ -77,6 +80,4 @@ Live Interactive Prototype: https://vayu-avekshan-prototype-42mjbhjgzmymenbr5hfp
 Video Demonstration: YouTube Demo Link (Replace with your unlisted YouTube URL)
 Team Name: Genesis Loop
 Institute: Fr. Conceicao Rodrigues Institute of Technology (FCRIT) 
-## ⚙️ System Architecture
-
-The pipeline processes AWS telemetry through four sequential layers:
+'''bash
